@@ -85,8 +85,8 @@ def test_ultra_fast(eyes, driver):
     # https://applitools.com/docs/topics/sdk/the-eyes-sdk-check-fluent-api.html
     eyes.check("", Target.window().fully().with_name("Login Window Test"))
 
-    driver.find_element_by_id("username")..send_keys("xyz")
-    driver.find_element_by_id("password")..send_keys("xyz")
+    #driver.find_element_by_id("username")..send_keys("xyz")
+    #driver.find_element_by_id("password")..send_keys("xyz")
     driver.find_element_by_id("log-in").click()
 
     # Check the app page
