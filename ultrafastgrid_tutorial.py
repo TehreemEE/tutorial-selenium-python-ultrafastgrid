@@ -76,14 +76,14 @@ def eyes_setup(runner, batch_info):
 
 def test_ultra_fast(eyes, driver):
     # Navigate to the url we want to test
-    driver.get("https://demo.applitools.com/index_v2.html?mkt_tok=Njg3LVRFUi02MTIAAAGBEUk0mSs7nNo_n2Z_Sr2zC6xztMawiEJywLcI4lIoVD9-2NnOVZ0iPVWaUCF2FHOPlZCdUDCZZ9nlNB09-w")
+    driver.get("https://demo.applitools.com/index_v2.html")
 
     # Call Open on eyes to initialize a test session
     eyes.open(driver, "Demo App - Selenium for Python - Ultrafast", "Smoke Test - Selenium for Python - Ultrafast", {"width": 800, "height": 600})
 
     # check the login page with fluent api, see more info here
     # https://applitools.com/docs/topics/sdk/the-eyes-sdk-check-fluent-api.html
-    eyes.check("", Target.window().fully().with_name("Login page"))
+    eyes.check("", Target.window().fully().with_name("Login Form"))
 
     driver.find_element_by_id("log-in").click()
 
