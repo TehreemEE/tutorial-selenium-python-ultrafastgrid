@@ -76,7 +76,7 @@ def eyes_setup(runner, batch_info):
 
 def test_ultra_fast(eyes, driver):
     # Navigate to the url we want to test
-    driver.get("https://demo.applitools.com/index_v2.html")
+    driver.get("https://demo.applitools.com/index_v2.html?mkt_tok=Njg3LVRFUi02MTIAAAGBEUk0mSs7nNo_n2Z_Sr2zC6xztMawiEJywLcI4lIoVD9-2NnOVZ0iPVWaUCF2FHOPlZCdUDCZZ9nlNB09-w")
 
     # Call Open on eyes to initialize a test session
     eyes.open(driver, "Demo App - Selenium for Python - Ultrafast", "Smoke Test - Selenium for Python - Ultrafast", {"width": 800, "height": 600})
