@@ -88,7 +88,7 @@ def test_ultra_fast(eyes, driver):
     driver.find_element_by_id("log-in").click()
 
     # Check the app page
-    eyes.check("", Target.window().fully().with_name("App page"))
+    eyes.check("", Target.window().fully().with_name("Login Form"))
 
     # Call Close on eyes to let the server know it should display the results
     eyes.close(False)
